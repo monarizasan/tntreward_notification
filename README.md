@@ -15,13 +15,13 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 1. サーバにログインしてとりあえずこのリポジトリをgit cloneする。
 
-    git clone https://github.com/monarizasan/tntreward_notification.git
+    `git clone https://github.com/monarizasan/tntreward_notification.git`
     
 2. 作成されたtntreward_notificationディレクトリへ移動してnodelist.txtを開きます。
 
-    cd tntreward_notification
+    `cd tntreward_notification`
     
-    nano nodelist.txt
+    `nano nodelist.txt`
     
    リワードの当落を調べたいノードの情報を、ノード名=ノードアドレス のようにnodelist.txtに記載します。
    
@@ -33,17 +33,17 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 5. 下記を実行し、TNTreward_notification.pyのオーナーと実行権限を変更します。
 
-    sudo chmod 700 TNTreward_notification.py
+    `sudo chmod 700 TNTreward_notification.py`
     
-    sudo chown root:root TNTreward_notification.py
+    `sudo chown root:root TNTreward_notification.py`
     
 6. cronを設定し、TNTreward_notification.pyが30分ごとに実行されるように設定します。
 
-    sudo crontab -u root -e
+    `sudo crontab -u root -e`
     
    上記コマンドでcrontabが開くので（初めての場合には使用するエディタを聞かれるので好きなものを選びます）、下記を追記します。
    
-    1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/TNTreward_notification/TNTreward_notification.py
+    `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/TNTreward_notification/TNTreward_notification.py`
     
    [username]部分は該当するユーザー名に置き換えてください。
    
