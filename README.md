@@ -71,8 +71,6 @@ TNTreward_notification_using_LINE_Notify
    
    以下の画像のようにリワードが当たったかどうかがLINEに通知されてきます。
    
-   ![img_16152](https://user-images.githubusercontent.com/32188449/33521379-ebcb88ae-d813-11e7-91a6-87161e9be74a.jpg)
-   
    ![img_16162](https://user-images.githubusercontent.com/32188449/33521392-3c84c5f8-d814-11e7-9524-6f71e1e9b388.jpg)
    
    ![img_1616](https://user-images.githubusercontent.com/32188449/33521395-5fbc8934-d814-11e7-8be8-fead1553dcf8.jpg)
