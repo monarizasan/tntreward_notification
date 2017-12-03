@@ -1,7 +1,9 @@
 # tntreward_notification
 TNTreward_notification_using_LINE_Notify
 
-LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ちなみにTelegram用にもっと高機能のもの（https://github.com/kevinrombach/TNTNodeMonitorBot ）がすでにありますので、よほどのことがない限りそちらの方がおすすめです。どうしてもLINEが使いたいという方だけご使用ください。
+![img_1617](https://user-images.githubusercontent.com/32188449/33521399-653bf124-d814-11e7-97d4-342e1174c26c.jpg)
+
+上の画像のようにLINE Notifyを使ってTNTリワードの当落をLINEに通知します。ちなみにTelegram用にもっと高機能のもの（https://github.com/kevinrombach/TNTNodeMonitorBot ）がすでにありますので、よほどのことがない限りそちらの方がおすすめです。どうしてもLINEが使いたいという方だけご使用ください。
 
 必要な準備
 
