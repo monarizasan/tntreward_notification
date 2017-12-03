@@ -9,11 +9,11 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 <img width="504" alt="etherscan1" src="https://user-images.githubusercontent.com/32188449/33521257-94a713a2-d810-11e7-9209-80c296906e60.png">
 
-上記の左側のAPI-KEYsをクリックして
+   上記の左側のAPI-KEYsをクリックして
 
 <img width="515" alt="etherscan2" src="https://user-images.githubusercontent.com/32188449/33521265-bab08ccc-d810-11e7-9716-53775d864587.png">
 
-出てきた右側の青いCreate Api Keyというボタンを押してAPI-KEYを作成し、設定後に表示されたAPI-KEYを記録しておきます。
+   出てきた右側の青いCreate Api Keyというボタンを押してAPI-KEYを作成し、設定後に表示されたAPI-KEYを記録しておきます。
 
 ・LINE Notifyのトークンを作成して記録しておきます。参考になるサイト：https://qiita.com/takeshi_ok_desu/items/576a8226ba6584864d95
 
@@ -41,7 +41,7 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 <img width="645" alt="setting1" src="https://user-images.githubusercontent.com/32188449/33521301-9fe55296-d811-11e7-81c6-6df956e6f8cc.png">
 
-上の画像のように設定します。
+   上の画像のように設定します。
 
 4. TNTreward_notification.pyの10-12行目の部分では必要に応じて残高チェックの有無、通知パターン、LINEスタンプの有無が設定可能です（後述）が、ここではbalance_notify = 1、notify_pattern = 1、line_stamp = 1のままとりあえず次へ進みます。
 
@@ -73,6 +73,10 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
    
    ![img_16162](https://user-images.githubusercontent.com/32188449/33521392-3c84c5f8-d814-11e7-9524-6f71e1e9b388.jpg)
    
+   ![img_1616](https://user-images.githubusercontent.com/32188449/33521395-5fbc8934-d814-11e7-8be8-fead1553dcf8.jpg)
+
+   ![img_1617](https://user-images.githubusercontent.com/32188449/33521399-653bf124-d814-11e7-97d4-342e1174c26c.jpg)
+
    以降は残高チェックの有無、通知パターン、LINEスタンプの有無が設定についてです。
    
 7. TNTreward_notification.pyの10行目、balance_notifyは
