@@ -7,6 +7,10 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 ・Etherscan（https://etherscan.io/ ）にログインして（アカウントがなければ作成して）、API-KEYを作成します。
 
+<img width="504" alt="etherscan1" src="https://user-images.githubusercontent.com/32188449/33521257-94a713a2-d810-11e7-9209-80c296906e60.png">
+
+<img width="515" alt="etherscan2" src="https://user-images.githubusercontent.com/32188449/33521265-bab08ccc-d810-11e7-9716-53775d864587.png">
+
 ・LINE Notifyのトークンを作成します。参考になるサイト：https://qiita.com/takeshi_ok_desu/items/576a8226ba6584864d95
 
 ・サーバ（作者はこのプログラムをTNTノードが稼動しているサーバ上で一緒に動かしています。）
