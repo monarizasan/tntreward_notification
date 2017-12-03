@@ -9,11 +9,15 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 <img width="504" alt="etherscan1" src="https://user-images.githubusercontent.com/32188449/33521257-94a713a2-d810-11e7-9209-80c296906e60.png">
 
+上記の左側のAPI-KEYsをクリックして
+
 <img width="515" alt="etherscan2" src="https://user-images.githubusercontent.com/32188449/33521265-bab08ccc-d810-11e7-9716-53775d864587.png">
 
-・LINE Notifyのトークンを作成します。参考になるサイト：https://qiita.com/takeshi_ok_desu/items/576a8226ba6584864d95
+出てきた右側の青いCreate Api Keyというボタンを押してAPI-KEYを作成し、設定後に表示されたAPI-KEYを記録しておきます。
 
-・サーバ（作者はこのプログラムをTNTノードが稼動しているサーバ上で一緒に動かしています。）
+・LINE Notifyのトークンを作成して記録しておきます。参考になるサイト：https://qiita.com/takeshi_ok_desu/items/576a8226ba6584864d95
+
+・サーバ（作者はこのプログラムをTNTノードが稼動しているサーバ上で一緒に動かしていますので、その方法であれば新たにサーバは必要ありません。）を稼働させます。
 
 設定方法
 
@@ -29,9 +33,15 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
     
    リワードの当落を調べたいノードの情報を、ノード名=ノードアドレス のようにnodelist.txtに記載します。
    
-   複数のノードを登録する際には、1行に1つずつノード情報を記載をノード名=ノードアドレス のように記載します。
+<img width="443" alt="nodelist" src="https://user-images.githubusercontent.com/32188449/33521285-700fef40-d811-11e7-8dd6-5b555383d50f.png">
+   
+   複数のノードを登録する際には、上の画像のように1行に1つずつノード情報を記載をノード名=ノードアドレス のように記載します。
    
 3. 次にTNTreward_notification.pyを開き、8行目にEtherscanのAPI-KEYを、9行目にLINE Notifyのトークンを、13行目にnodelist.txtのフルパスを記載します。
+
+<img width="645" alt="setting1" src="https://user-images.githubusercontent.com/32188449/33521301-9fe55296-d811-11e7-81c6-6df956e6f8cc.png">
+
+上の画像のように設定します。
 
 4. TNTreward_notification.pyの10-12行目の部分では必要に応じて残高チェックの有無、通知パターン、LINEスタンプの有無が設定可能です（後述）が、ここではbalance_notify = 1、notify_pattern = 1、line_stamp = 1のままとりあえず次へ進みます。
 
@@ -49,7 +59,9 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
    
     `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/TNTreward_notification/TNTreward_notification.py`
     
-   [username]部分は該当するユーザー名に置き換えてください。
+   [username]部分は該当するユーザー名に置き換えてください。以下のように追記します。
+   
+<img width="813" alt="crontab" src="https://user-images.githubusercontent.com/32188449/33521342-62cafb4e-d812-11e7-9018-62863f835f7d.png">
    
    追記したらcrontabを上書き保存すると、cronが30分ごとにTNTreward_notification.pyを実行します。
    
