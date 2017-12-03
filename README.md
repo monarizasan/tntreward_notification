@@ -41,7 +41,7 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
 
 <img width="645" alt="setting1" src="https://user-images.githubusercontent.com/32188449/33521301-9fe55296-d811-11e7-81c6-6df956e6f8cc.png">
 
-   上の画像のように設定します。
+   上の画像のように設定します。(*画像内のKEYやpathはあくまでサンプルですので、自身のものに書き換えてください。)
 
 4. TNTreward_notification.pyの10-12行目の部分では必要に応じて残高チェックの有無、通知パターン、LINEスタンプの有無が設定可能です（後述）が、ここではbalance_notify = 1、notify_pattern = 1、line_stamp = 1のままとりあえず次へ進みます。
 
