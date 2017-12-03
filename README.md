@@ -61,11 +61,15 @@ LINE Notifyを使ってTNTリワードの当落をLINEに通知します。ち�
     
    [username]部分は該当するユーザー名に置き換えてください。以下のように追記します。
    
-<img width="813" alt="crontab" src="https://user-images.githubusercontent.com/32188449/33521342-62cafb4e-d812-11e7-9018-62863f835f7d.png">
+<img width="863" alt="cron" src="https://user-images.githubusercontent.com/32188449/33521359-ff19c142-d812-11e7-8672-455bb74ccf19.png">
    
    追記したらcrontabを上書き保存すると、cronが30分ごとにTNTreward_notification.pyを実行します。
    
    以上で設定自体は終了です。通知を中止する場合には追記した行を消去してください。
+   
+   以下の画像のようにリワードが当たったかどうかがLINEに通知されてきます。
+   
+   ![img_16152](https://user-images.githubusercontent.com/32188449/33521379-ebcb88ae-d813-11e7-91a6-87161e9be74a.jpg)
    
    以降は残高チェックの有無、通知パターン、LINEスタンプの有無が設定についてです。
    
