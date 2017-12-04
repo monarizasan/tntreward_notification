@@ -81,7 +81,7 @@ TNTreward_notification_using_LINE_Notify
    
    の中から設定が可能です。上述のサンプルコマンドでは--balance-notify electedに設定されています。
    
-6. TNTreward_notification.pyの11行目、notify-patternオプションでは
+6. TNTreward_notification.pyのnotify-patternオプションでは
 
     win:リワードが当選した時だけ通知する。
     
