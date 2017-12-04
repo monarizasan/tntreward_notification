@@ -51,9 +51,11 @@ TNTreward_notification_using_LINE_Notify
     
    上記コマンドでcrontabが開くので（初めての場合には使用するエディタを聞かれるので好きなものを選びます）、下記のコマンドを追記します。
    
-    `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/TNTreward_notification/TNTreward_notification.py --nodes /home/[username]/TNTreward_notification/nodelist.txt --etherscan-token [etherscanトークン] --line-token [lineトークン] --balance-notify elected --notify-pattern winlose`
+    `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/tntreward_notification/TNTreward_notification.py --nodes /home/[username]/tntreward_notification/nodelist.txt --etherscan-token [etherscanトークン] --line-token [lineトークン] --balance-notify elected --notify-pattern winlose`
     
-   [username]、[etherscanトークン]、[lineトークン]部分は該当する自分のものに置き換えてください。
+   [username]、[etherscanトークン]、[lineトークン]部分は該当する自分のものに置き換えてください。例えば下記のようになります。
+   
+   `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/monarisa/tntreward_notification/TNTreward_notification.py --nodes /home/monarisa/tntreward_notification/nodelist.txt --etherscan-token ABCR4IA9862D7V9W1777HHHZA3FRGGGGFQ --line-token LW699999ffffddddPJUSywDssssggggiiiiTgkAd --balance-notify elected --notify-pattern winlose`
    
    追記したらcrontabを上書き保存すると、cronが30分ごとにTNTreward_notification.pyを実行します。
    
