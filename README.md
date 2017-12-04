@@ -49,7 +49,7 @@ TNTreward_notification_using_LINE_Notify
 
     `sudo crontab -u root -e`
     
-   上記コマンドでcrontabが開くので（初めての場合には使用するエディタを聞かれるので好きなものを選びます）、下記のコマンドを追記します。
+   上記コマンドでcrontabが開くので（初めての場合には使用するエディタを聞かれるので好きなものを選びます）、下記のコマンドを追記します。(crontabに下記を1行で追記します)
    
     `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/tntreward_notification/TNTreward_notification.py --nodes /home/[username]/tntreward_notification/nodelist.txt --etherscan-token [etherscanトークン] --line-token [lineトークン] --balance-notify elected --notify-pattern winlose`
     
