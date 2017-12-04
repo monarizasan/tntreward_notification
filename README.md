@@ -23,7 +23,7 @@ TNTreward_notification_using_LINE_Notify
 
 設定方法
 
-1. サーバにログインしてとりあえずこのリポジトリをgit cloneする。
+1. サーバにログインしてとりあえずこのリポジトリ（https://github.com/monarizasan/tntreward_notification ）をgit cloneする。
 
     `git clone https://github.com/monarizasan/tntreward_notification.git`
     
