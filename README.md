@@ -69,7 +69,7 @@ TNTreward_notification_using_LINE_Notify
 
    ![img_1617](https://user-images.githubusercontent.com/32188449/33521399-653bf124-d814-11e7-97d4-342e1174c26c.jpg)
 
-   以降は残高チェックの有無、通知パターン、LINEスタンプの有無が設定についてです。
+   以降は残高チェックの有無、通知パターン、LINEスタンプの有無の設定についてです。
    
 5. TNTreward_notification.pyのbalance-notifyオプションでは
 
@@ -91,6 +91,6 @@ TNTreward_notification_using_LINE_Notify
    
 9. --without-line-stampオプションをつけると通知時にLINEスタンプが送られてこなくなります。
 
- 
+＊etherscanのapiを30分ごとにたたくスクリプトなので、そんなに負荷がかからない分リワードアドレス決定のタイミング次第でリワード当落通知が1回分(30分)遅れて通知されることがあるようです。現在解決策を考え中です。
    
 以上で設定は終了です。何かありましたら作者のtwitterアカウント（https://twitter.com/dankepy ）までご連絡ください。
