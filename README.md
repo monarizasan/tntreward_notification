@@ -51,11 +51,11 @@ TNTreward_notification_using_LINE_Notify
     
    上記コマンドでcrontabが開くので（初めての場合には使用するエディタを聞かれるので好きなものを選びます）、下記のコマンドを追記します。(crontabに下記を1行で追記します)
    
-    `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/tntreward_notification/TNTreward_notification.py --nodes /home/[username]/tntreward_notification/nodelist.txt --etherscan-token [etherscanトークン] --line-token [lineトークン] --balance-notify elected --notify-pattern winlose`
+    `3,33 * * * * export PATH=$PATH:/usr/bin/;python3 /home/[username]/tntreward_notification/TNTreward_notification.py --nodes /home/[username]/tntreward_notification/nodelist.txt --etherscan-token [etherscanトークン] --line-token [lineトークン] --balance-notify elected --notify-pattern winlose`
     
    [username]、[etherscanトークン]、[lineトークン]部分は該当する自分のものに置き換えてください。例えば下記のようになります。
    
-   `1,31 * * * * export PATH=$PATH:/usr/bin/;python3 /home/monarisa/tntreward_notification/TNTreward_notification.py --nodes /home/monarisa/tntreward_notification/nodelist.txt --etherscan-token ABCR4IA9862D7V9W1777HHHZA3FRGGGGFQ --line-token LW699999ffffddddPJUSywDssssggggiiiiTgkAd --balance-notify elected --notify-pattern winlose`
+   `3,33 * * * * export PATH=$PATH:/usr/bin/;python3 /home/monarisa/tntreward_notification/TNTreward_notification.py --nodes /home/monarisa/tntreward_notification/nodelist.txt --etherscan-token ABCR4IA9862D7V9W1777HHHZA3FRGGGGFQ --line-token LW699999ffffddddPJUSywDssssggggiiiiTgkAd --balance-notify elected --notify-pattern winlose`
    
    追記したらcrontabを上書き保存すると、cronが30分ごとにTNTreward_notification.pyを実行します。
    
@@ -91,6 +91,6 @@ TNTreward_notification_using_LINE_Notify
    
 9. --without-line-stampオプションをつけると通知時にLINEスタンプが送られてこなくなります。
 
-＊etherscanのapiを30分ごとにたたくスクリプトなので、そんなに負荷がかからない分リワードアドレス決定のタイミング次第でリワード当落通知が1回分(30分)遅れて通知されることがあるようです。現在解決策を考え中です。
+＊etherscanのapiを30分ごとにたたくスクリプトなので、そんなに負荷がかからない分リワードアドレス決定のタイミング次第でリワード当落通知が1回分(30分)遅れて通知されることがあるようです。現在解決策を考え中です。取り急ぎの回避策として、上のコマンドでは毎時3分と33分に通知となっています。
    
 以上で設定は終了です。何かありましたら作者のtwitterアカウント（https://twitter.com/dankepy ）までご連絡ください。
