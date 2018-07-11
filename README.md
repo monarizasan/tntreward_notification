@@ -93,4 +93,4 @@ TNTreward_notification_using_LINE_Notify
 
 ＊etherscanのapiを30分ごとにたたくスクリプトなので、そんなに負荷がかからない分リワードアドレス決定のタイミング次第でリワード当落通知が1回分(30分)遅れて通知されることがあるようです。現在解決策を考え中です。取り急ぎの回避策として、上のコマンドでは毎時3分と33分に通知となっています。
    
-以上で設定は終了です。何かありましたら作者のtwitterアカウント（https://twitter.com/dankepy ）までご連絡ください。
+以上で設定は終了です。何かありましたら作者のtwitterアカウント（https://twitter.com/crypto_monalisa ）までご連絡ください。
